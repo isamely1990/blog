@@ -1,0 +1,1 @@
+			{code:"Blog", "format":{"size":[20,140]}, url:"nota_url_abm.php"}

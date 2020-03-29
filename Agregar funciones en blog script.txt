@@ -1,0 +1,27 @@
+//-------------------------------------------------------------------------------------------------------
+function LimpioNombre($cadena)	{
+
+			$cadena = strtolower($cadena);
+			$buscar = array(".",",","?","?","?","?","?","?","?","?","?","?","?","?"," ","'","&","?","?","?","?","?","?","?","?"."?"."?");
+			$reemplazar = array ("","","n","a","e","i","o","u","n","a","e","i","o","u","-","","y", "a","a","e","e","i","i","o","o","u","u");
+			$cadena = str_replace($buscar,$reemplazar,$cadena);
+
+			return $cadena;
+		}
+
+//-----------------------------------------------------------------------------------------------------
+    function armarUrl($titulo, $url)    {
+
+        if ($url == "")
+            $cadena = LimpioNombre($titulo);
+        else
+            $cadena = $url;
+
+        return $cadena;
+    }
+	
+
+--------------------
+
+VER TINNITUS PARA BOTONES DE ANTERIOR Y SIGUIENTE AGREGADOS (ATENTI CON EL NOMBRE DE LA TABLA DONDE SE HACE AL QUERY)
+

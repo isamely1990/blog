@@ -1,0 +1,4 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteRule ^tema-(.*)/(.*)$ blog_detalle.php?id=$1&titulo=$2 [NC]
